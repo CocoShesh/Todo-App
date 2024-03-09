@@ -1,0 +1,136 @@
+:root {
+  /* ### Primary */
+
+  --Bright-Blue: hsl(220, 98%, 61%);
+  --Check-Background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+
+  /* ### Neutral */
+  /* 
+  ### Light Theme */
+
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+  --Light-Grayish-Blue: hsl(233, 11%, 84%);
+  --Dark-Grayish-Blue: hsl(236, 9%, 61%);
+  --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+
+  /* ### Dark Theme */
+
+  --Very-Dark-Blue: hsl(235, 21%, 11%);
+  --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+  --Light-Grayish-Blue: hsl(234, 39%, 85%);
+  --Light-Grayish-Blue: hsl(236, 33%, 92%);
+  --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+  --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+  --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+body {
+  position: relative;
+  background: hsl(235, 21%, 11%);
+  overflow-x: hidden;
+}
+
+main input {
+  background: var(--Very-Dark-Desaturated-Blue);
+}
+.circle {
+  border: 1px solid rgba(255, 255, 255, 0.171);
+}
+
+.circle.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+.circle.checked::before {
+  background-image: url(/images/icon-check.svg);
+}
+
+.bottom-content {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.list-notes {
+  background-color: var(--Very-Dark-Desaturated-Blue);
+}
+ul li {
+  height: 50px;
+  list-style: none;
+
+  padding-block: 0.8rem;
+  color: #bfc1d6;
+  position: relative;
+}
+
+.list-circle {
+  background-image: url(/images/unchecked.png);
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  background-color: var(--Bright-Blue);
+  background-image: url(images/icon-check.svg);
+}
+ul li.check {
+  display: none;
+}
+.circle-list {
+  border: 1px solid rgba(255, 255, 255, 0.171);
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 1;
+  margin-left: 1rem;
+  top: 105px;
+  background-image: url(images/icon-check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--Bright-Blue);
+}
+
+.status:hover {
+  cursor: pointer;
+  user-select: none;
+}
+
+.All.active,
+.Completed.active,
+.Active.active {
+  color: var(--Bright-Blue);
+  border-bottom: 2px solid var(--Bright-Blue);
+}
+
+body.light {
+  background: var(--Very-Light-Gray);
+}
+input.lightMode {
+  background-color: white;
+  color: black;
+}
+.listOfNotes.darkmode {
+  background-color: white;
+  color: black;
+}
+li.dark {
+  color: black;
+  border-bottom: 1px solid var(--Light-Grayish-Blue);
+}
+.bottom-content.darkColor {
+  color: black;
+}
+
+.custom-shadow {
+  box-shadow: 2px 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
