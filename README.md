@@ -4,25 +4,25 @@ This Todo app allows users to manage their tasks efficiently. Users can add, com
 ## Screenshots
 
 ### Active States - Dark
-![Active States - Dark](active-states-dark.jpg)
+![Active States - Dark](/design/active-states-dark.jpg)
 
 ### Active States - Light
-![Active States - Light](active-states-light.jpg)
+![Active States - Light](/design/active-states-light.jpg)
 
 ### Desktop Design - Dark
-![Desktop Design - Dark](desktop-design-dark.jpg)
+![Desktop Design - Dark](/design/desktop-design-dark.jpg)
 
 ### Desktop Design - Light
-![Desktop Design - Light](desktop-design-light.jpg)
+![Desktop Design - Light](/design/desktop-design-light.jpg)
 
 ### Desktop Preview
-![Desktop Preview](desktop-preview.jpg)
+![Desktop Preview](/design/desktop-preview.jpg)
 
 ### Mobile Design - Dark
-![Mobile Design - Dark](mobile-design-dark.jpg)
+![Mobile Design - Dark](/design/mobile-design-dark.jpg)
 
 ### Mobile Design - Light
-![Mobile Design - Light](mobile-design-light.jpg)
+![Mobile Design - Light](/design/mobile-design-light.jpg)
 
 Features
 
