@@ -152,7 +152,7 @@ const Todo = () => {
             ? "images/bg-desktop-light.jpg"
             : "images/bg-desktop-dark.jpg"
         }
-        className="logo max-sm:h-[230px] max-w-2xl"
+        className="logo max-sm:h-[150px] h-[250px] min-w-full"
         alt=""
       />
       <section className="fixed top-0 left-0 w-full h-full flex justify-center  max-sm:w-screen items-center">
