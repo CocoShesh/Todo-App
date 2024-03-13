@@ -4,7 +4,6 @@ import { v4 as uuidv4 } from "uuid";
 import toast, { Toaster } from "react-hot-toast";
 import "./style.css";
 const Todo = () => {
-  const listId = useId();
   const {
     register,
     handleSubmit,
@@ -87,7 +86,6 @@ const Todo = () => {
       toast.success("Item Added Successfully");
       reset();
     } catch (error) {
-      console.log(error);
       toast.error("Something went wrong");
     }
   };
@@ -99,7 +97,6 @@ const Todo = () => {
       setData(updatedData);
       toast.success("Item Deleted Successfully");
     } catch (error) {
-      console.log(error);
       toast.error("Something went wrong");
     }
   };
@@ -143,7 +140,6 @@ const Todo = () => {
   const changeBodyBackgroundColor = () => {
     document.body.style.backgroundColor = lightMode ? "" : "white";
   };
-  console.log("this is list:", data);
   return (
     <>
       <img
