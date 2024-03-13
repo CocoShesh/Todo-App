@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useId } from "react";
 import { useForm } from "react-hook-form";
 import { v4 as uuidv4 } from "uuid";
 import toast, { Toaster } from "react-hot-toast";
 import "./style.css";
 const Todo = () => {
+  const listId = useId();
   const {
     register,
     handleSubmit,
@@ -75,7 +76,11 @@ const Todo = () => {
 
   const onSubmit = item => {
     try {
-      const newItem = { id: uuidv4(), todo: item.todo, completed: false };
+      const newItem = {
+        id: uuidv4(),
+        todo: item.todo,
+        completed: false,
+      };
       const updatedData = [...data, newItem];
       localStorage.setItem("todo", JSON.stringify(updatedData));
       setData(updatedData);
@@ -138,6 +143,7 @@ const Todo = () => {
   const changeBodyBackgroundColor = () => {
     document.body.style.backgroundColor = lightMode ? "" : "white";
   };
+  console.log("this is list:", data);
   return (
     <>
       <img
@@ -146,7 +152,7 @@ const Todo = () => {
             ? "images/bg-desktop-light.jpg"
             : "images/bg-desktop-dark.jpg"
         }
-        className="logo max-sm:h-[230px]"
+        className="logo max-sm:h-[230px] max-w-2xl"
         alt=""
       />
       <section className="fixed top-0 left-0 w-full h-full flex justify-center  max-sm:w-screen items-center">
